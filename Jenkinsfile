@@ -14,7 +14,6 @@ pipeline {
       }
     }
     stage('Upload to Artifactory') {
-      agent any
           image 'releases-docker.jfrog.io/jfrog/jfrog-cli-v2:2.2.0' 
           reuseNode true
         
